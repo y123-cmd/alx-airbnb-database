@@ -6,16 +6,16 @@ To ensure our Airbnb database design is in **Third Normal Form (3NF)** by elimin
 ---
 
 ## Step 1: First Normal Form (1NF)
-- All tables have atomic columns — no lists or arrays.
-- Every table has a primary key.
+- All tables have **atomic columns** — no lists or arrays.
+- Every table has a **primary key**.
 - Example: `User` table has simple values like `first_name`, `email`, etc. — no repeating groups.
 
- 1NF Achieved
+✅ **1NF Achieved**
 
 ---
 
 ## Step 2: Second Normal Form (2NF)
-- All non-key attributes are fully dependent on the **entire primary key.
+- All non-key attributes are fully dependent on the entire primary key.
 - We have single-column primary keys, so 2NF is automatically satisfied.
 
 2NF Achieved
@@ -29,7 +29,7 @@ To ensure our Airbnb database design is in **Third Normal Form (3NF)** by elimin
   - In `Payment`, `amount` and `payment_method` depend only on `payment_id`.
   - No table stores derived or repeated information (e.g., user email in both User and Booking — only stored in `User`).
 
-3NF Achieved
+ 3NF Achieved
 
 ---
 
@@ -45,4 +45,3 @@ This ensures:
 - Improved data consistency
 - Easier maintenance
 - Less redundancy
-
