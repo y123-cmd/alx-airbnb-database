@@ -17,3 +17,9 @@ This task contains:
 
 - A non-correlated subquery to find properties with an average rating > 4.0
 - A correlated subquery to find users who made more than 3 bookings
+
+
+## Aggregations and Window Functions
+
+- Counted total bookings per user using GROUP BY.
+- Ranked properties by bookings using RANK() window function.
