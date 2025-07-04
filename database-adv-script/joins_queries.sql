@@ -18,7 +18,8 @@ SELECT
 FROM
     properties
 LEFT JOIN
-    reviews ON properties.id = reviews.property_id;
+    reviews ON properties.id = reviews.property_id
+ORDER BY properties.name;
 
 -- 3. FULL OUTER JOIN: Retrieve all users and bookings, even if not matched
 -- Note: MySQL does not support FULL OUTER JOIN directly, so we use UNION of LEFT and RIGHT JOINs
